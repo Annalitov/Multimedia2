@@ -5,7 +5,7 @@
 ## Выбор датасета
 Поскольку мне не удалось найти универсальный датасет для всех трех лаб, то вот датасеты, которые я использовала:  
  - Лр 6 - [Tree Nuts-Image Classification](https://www.kaggle.com/datasets/gpiosenka/tree-nuts-image-classification)
- - Лр 7 - [animals segmentation and detection](https://www.kaggle.com/datasets/artemgoncarov/animals-segmentation-and-detection) 
+ - Лр 7 и 8 - [animals segmentation and detection](https://www.kaggle.com/datasets/artemgoncarov/animals-segmentation-and-detection) 
   
 
 ## Выбор метрик
@@ -13,6 +13,8 @@
 Accuracy и F1 - score для общей оценки модели, а также оценки качества распределения объектов по классам  
 Для Лр 7 использовались метрики  
 Pixel Accuracy и IoU  для измереиния правильного соотношения пкиселей к классам и оценки качества совпадения предсказанных масок на уровне пикселей   
+Для Лр 8 использовались метрики  
+Mean Avarage Precision, Precision и Recall для отображения значения точности детекции и демонстрации насколько хорошо модель находит объекты  
 
 
 Таблица 1 - Метрика качества на тестовом наборе данных
@@ -23,8 +25,8 @@ Pixel Accuracy и IoU  для измереиния правильного соо
 |                     | Трансформерная| Accuracy: 0.8798<br>F1-Score: 0.8778  | Accuracy: 0.9800<br>F1-Score: 0.9798  | Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.3000<br>F1-Score: 0.2615|
 | Семантичекая сегментация|Сверточная |Pixel Accuracy: 0.6332<br>IoU: 0.0146   |Pixel Accuracy:0.9793<br>IoU:0.1573 |Pixel Accuracy:0.7940<br>IoU:0.0122|Pixel Accuracy:0.9633<br>IoU:0.0109|
 |                     |Трасформенная|Pixel Accuracy: 0.5646<br>IoU: 0.0162|Pixel Accuracy:0.9606<br>IoU:0.0900|Pixel Accuracy:<br>IoU:|Pixel Accuracy: <br>IoU:|
-|Обнаружение и распознование объектов|Сверточная | Accuracy: 0.8427<br>F1-Score: 0.8442 | Accuracy: 0.8782<br>F1-Score: 0.8779 | Accuracy: 0.8000<br>F1-Score: 0.8057 |Accuracy: 0.2200<br>F1-Score: 0.1695|
-|                     |Трансформенная     |Accuracy: 0.2200<br>F1-Score: 0.1695| Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.2200<br>F1-Score: 0.1695|
+|Обнаружение и распознование объектов|YOLO8 | mAP30: 0.679<br>R: 0.612 | mAP30: 0.689<br>R: 0.673 | mAP: 0.03<br> Train loss: 0.0247 |mAP10:  0.305<br>Train Loss: 0.0285|
+|                     |YOLO11     |mAP30: 0.695<br>R: 0.748| mAP30: 0.630<br>R: 0.602|||
 
 ## Вывод
 По данной таблице можно сделать вывод, что алгоритмы из встроенных библиотек показывают более лучшие результаты, чем самостоятельно написанные. Хотя самостоятельно написанные реализации помогают лучше понять сами алгоритмы, но в готовых уже могут быть учтены разные оптимизации. Улучшенные бейзлайны почти всегда показывают более хорошие метрики. В некоторых случаях показатели были хуже, возможно из-за неправильно подобранных параметров.
