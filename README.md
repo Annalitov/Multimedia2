@@ -21,8 +21,8 @@ Pixel Accuracy и IoU  для измереиния правильного соо
 |---------------------|---------------|----------------------------------|------------------------------------|-------------------------------------------|-----------------------------|
 | Классификация       | Сверточная | Accuracy: 0.8069<br>F1-Score: 0.8051 | Accuracy: 0.9400<br>F1-Score: 0.9409 | Accuracy: 0.400<br>F1-Score: 0.3415| Accuracy: 0.5400<br>F1-Score: 0.5178|
 |                     | Трансформерная| Accuracy: 0.8798<br>F1-Score: 0.8778  | Accuracy: 0.9800<br>F1-Score: 0.9798  | Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.3000<br>F1-Score: 0.2615|
-| Семантичекая сегментация|Сверточная | Accuracy: 0.8658<br>F1-Score: 0.8623   | Accuracy: 0.8515<br>F1-Score: 0.8515 | Accuracy: 0.8013<br>F1-Score: 0.8000|Accuracy: 0.2200<br>F1-Score: 0.1695|
-|                     |Трасформенная|Accuracy: 0.2200<br>F1-Score: 0.1695| Accuracy: 0.2200<br>F1-Score: 0.1695| Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.2200<br>F1-Score: 0.1695|
+| Семантичекая сегментация|Сверточная |Pixel Accuracy: 0.6332<br>IoU: 0.0146   |Pixel Accuracy:0.9793<br>IoU:0.1573 |Pixel Accuracy:0.7940<br>IoU:0.0122|Pixel Accuracy:0.9633<br>IoU:0.0109|
+|                     |Трасформенная|Pixel Accuracy: 0.5646<br>IoU: 0.0162|Pixel Accuracy:0.9606<br>IoU:0.0900|Pixel Accuracy:<br>IoU:|Pixel Accuracy: <br>IoU:|
 |Обнаружение и распознование объектов|Сверточная | Accuracy: 0.8427<br>F1-Score: 0.8442 | Accuracy: 0.8782<br>F1-Score: 0.8779 | Accuracy: 0.8000<br>F1-Score: 0.8057 |Accuracy: 0.2200<br>F1-Score: 0.1695|
 |                     |Трансформенная     |Accuracy: 0.2200<br>F1-Score: 0.1695| Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.2200<br>F1-Score: 0.1695|Accuracy: 0.2200<br>F1-Score: 0.1695|
 
